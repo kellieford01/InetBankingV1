@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LocatorsDemo2 {
+public class LocatorsClassTagNames {
 
 	public static void main(String[] args) {
 		String projectPath = System.getProperty("user.dir");
@@ -21,10 +21,10 @@ public class LocatorsDemo2 {
 		int slider = driver.findElements(By.className("homeslider-container")).size();
 		System.out.println(slider);
 		
-		//Locator by tag name. Also use to find multilp elements on a web page. a is the ancor for links
+		//Locator by tag name. Also use to find multiple elements on a web page. a is the ancor for links
 		int links = driver.findElements(By.tagName("a")).size();
 		System.out.println(links);
 		
-		
+	}	
 
 }
